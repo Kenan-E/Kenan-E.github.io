@@ -1,0 +1,112 @@
+/* General Styles */
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #15181d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+body {
+    background-color: #15181d;
+}
+
+.container {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.welcome-text {
+    color: #ffffffbe;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    transition: filter 0.5s ease;
+    animation: scaleUp 1.5s ease forwards;
+}
+
+.welcome-text:hover {
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
+.welcome-text-alt {
+    color: #ffffff44;
+    font-size: 1.0rem;
+    margin-bottom: -10px;
+    margin-top: 5px;
+    transition: filter 0.5s ease;
+    animation: scaleUp 1.5s ease forwards;
+}
+
+.welcome-text-alt:hover {
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
+.love-text {
+    color: #ffffff44;
+    font-size: 1.0rem;
+    text-align: end;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transition: filter 0.5s ease;
+    animation: scaleUp 1.5s ease forwards;
+}
+
+.love-text:hover {
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
+.button-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffffbe;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: filter 0.5s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+    color: #15181d;
+}
+
+.github-logo {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: filter 0.5s ease;
+    animation: scaleUp 1.5s ease forwards;
+}
+
+.github-logo:hover {
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
