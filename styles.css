@@ -38,7 +38,7 @@ body {
     color: #ffffff44;
     font-size: 1.0rem;
     margin-bottom: -10px;
-    margin-top: 5px;
+    margin-top: -30px;
     transition: filter 0.5s ease;
     animation: scaleUp 1.5s ease forwards;
 }
@@ -64,19 +64,20 @@ body {
 
 .button-container {
     display: flex;
-    gap: 40px;
+    gap: 20px;
     justify-content: center;
 }
 
 .btn {
-    padding: 10px 20px;
+    padding: 10px 25px;
+    margin-left:10px;
+    margin-right:10px;
     border: 2px solid #ffffff;
     background-color: transparent;
     color: #ffffffbe;
     font-size: 1rem;
     cursor: pointer;
-    transition: filter 0.5s ease;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, filter 0.5s ease;
 }
 
 .btn:hover {
@@ -92,7 +93,7 @@ body {
     width: 40px;
     height: 40px;
     cursor: pointer;
-    transition: filter 0.5s ease;
+    transition: transform 0.5s ease, filter 0.5s ease;
     animation: scaleUp 1.5s ease forwards;
 }
 
